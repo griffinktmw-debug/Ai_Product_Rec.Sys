@@ -5,9 +5,9 @@ import { getImageUrl } from '../utils/imageUtils';
 
 const ProductCard = ({ product, onEdit, onDelete }) => {
   const formatPrice = (price) => {
-    return new Intl.NumberFormat('en-US', {
+    return new Intl.NumberFormat('en-BW', {
       style: 'currency',
-      currency: 'USD'
+      currency: 'BWP'
     }).format(price);
   };
 
